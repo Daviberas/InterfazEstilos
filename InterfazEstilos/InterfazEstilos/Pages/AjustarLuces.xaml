@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="InterfazEstilos.Pages.AjustarLuces"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:InterfazEstilos.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Slider Orientation="Vertical" RelativePanel.LeftOf="btnMas"></Slider>
+        <Slider Orientation="Vertical" RelativePanel.RightOf="btnMas"></Slider>
+        <Button Name="btnMas" Padding="20" Margin="20" Content="+" FontWeight="Bold" Foreground="White" Background="PowderBlue" MinHeight="60" RelativePanel.AlignHorizontalCenterWithPanel="True" Click="btnMas_Click"/>
+        <Button Name="btnMenos" Padding="20" Margin="20" Content="-" FontWeight="Bold" Foreground="White" Background="PowderBlue" MinHeight="60" RelativePanel.AlignHorizontalCenterWithPanel="True" Click="btnMenos_Click" RelativePanel.Below="btnMas"/>
+    </RelativePanel>
+</Page>

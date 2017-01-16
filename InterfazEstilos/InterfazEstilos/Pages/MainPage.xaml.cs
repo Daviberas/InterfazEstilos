@@ -1,10 +1,13 @@
-﻿using System;
+﻿using InterfazEstilos.Pages;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +28,19 @@ namespace InterfazEstilos
         public MainPage()
         {
             this.InitializeComponent();
+
+            var titlebar = ApplicationView.GetForCurrentView().TitleBar;
+            titlebar.BackgroundColor = Colors.PowderBlue;
+            titlebar.ForegroundColor = Colors.White;
+            titlebar.ButtonHoverBackgroundColor = Colors.White;
+            titlebar.ButtonBackgroundColor = Colors.PowderBlue;
+            titlebar.ButtonHoverForegroundColor = Colors.PowderBlue;
+            titlebar.ButtonForegroundColor = Colors.White;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(HomePage));
         }
     }
 }
