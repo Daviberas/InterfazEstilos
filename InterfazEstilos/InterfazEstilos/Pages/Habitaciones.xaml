@@ -13,6 +13,10 @@
 
     <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock Margin="20,20,0,0" Text="Seleccione una habitación:"/>
-        <ListView ItemsSource="{Binding listado}"/>
+        <ListView ItemsSource="{Binding listado, Mode=TwoWay}" SelectedItem="{Binding habitacionSeleccionada, Mode=TwoWay}">
+            <DataTemplate>
+                <TextBlock/>
+            </DataTemplate>
+        </ListView>
     </StackPanel>
 </Page>

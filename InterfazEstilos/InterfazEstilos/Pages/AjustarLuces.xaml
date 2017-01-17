@@ -8,9 +8,11 @@
     mc:Ignorable="d">
 
     <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Slider Orientation="Vertical" RelativePanel.LeftOf="btnMas"></Slider>
-        <Slider Orientation="Vertical" RelativePanel.RightOf="btnMas"></Slider>
-        <Button Name="btnMas" Padding="20" Margin="20" Content="+" FontWeight="Bold" Foreground="White" Background="PowderBlue" MinHeight="60" RelativePanel.AlignHorizontalCenterWithPanel="True" Click="btnMas_Click"/>
-        <Button Name="btnMenos" Padding="20" Margin="20" Content="-" FontWeight="Bold" Foreground="White" Background="PowderBlue" MinHeight="60" RelativePanel.AlignHorizontalCenterWithPanel="True" Click="btnMenos_Click" RelativePanel.Below="btnMas"/>
+        <Image Name="imgBombilla" Source="/Assets/bombilla.png" RelativePanel.Above="sldBombilla" RelativePanel.AlignHorizontalCenterWith="sldBombilla" RelativePanel.AlignTopWithPanel="True" Stretch="None"/>
+        <Image Name="imgPersiana" Source="/Assets/persiana.png" RelativePanel.Above="sldPersiana" RelativePanel.AlignHorizontalCenterWith="sldPersiana" RelativePanel.AlignTopWithPanel="True" Stretch="None"/>
+        <Slider Name="sldBombilla" Orientation="Vertical" MinHeight="300" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="10" Minimum="0" Maximum="100" RelativePanel.LeftOf="btnMas"></Slider>
+        <Slider Name="sldPersiana" Orientation="Vertical" MinHeight="300" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="10" Minimum="0" Maximum="100" RelativePanel.RightOf="btnMas"></Slider>
+        <Button Name="btnMas" Padding="20" Margin="20,180,20,20" Content="+" FontWeight="Bold" Foreground="White" Background="PowderBlue" MinHeight="60" RelativePanel.AlignHorizontalCenterWithPanel="True"/>
+        <Button Name="btnMenos" Padding="20" Margin="20,60,20,20" Content="-" FontWeight="Bold" Foreground="White" Background="PowderBlue" MinHeight="60" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="btnMas"/>
     </RelativePanel>
 </Page>

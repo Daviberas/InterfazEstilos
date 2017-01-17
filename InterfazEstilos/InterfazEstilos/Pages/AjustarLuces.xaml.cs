@@ -26,15 +26,5 @@ namespace InterfazEstilos.Pages
         {
             this.InitializeComponent();
         }
-
-        private void btnMas_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnMenos_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
