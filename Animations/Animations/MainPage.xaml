@@ -1,0 +1,64 @@
+﻿<Page
+    x:Class="Animations.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Animations"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Storyboard x:Name="AnimaChrom">
+            <!--<DoubleAnimation Storyboard.TargetName="chrom" Storyboard.TargetProperty="Opacity" From="1.0" To="0.2" AutoReverse="True" RepeatBehavior="Forever" Duration="0:0:5"></DoubleAnimation>-->
+            <DoubleAnimation Storyboard.TargetName="chrom" Storyboard.TargetProperty="(Canvas.Left)" From="1200" To="0" AutoReverse="True" RepeatBehavior="Forever" Duration="0:0:5"></DoubleAnimation>
+            <!--<DoubleAnimation Storyboard.TargetName="chrom" Storyboard.TargetProperty="(RenderTransform).(RotateTransform.Angle)" From="0" To="360" RepeatBehavior="Forever" Duration="0:0:1"></DoubleAnimation>-->
+        </Storyboard>
+        <Storyboard x:Name="AnimaLissa">
+            <!--<DoubleAnimation Storyboard.TargetName="chrom" Storyboard.TargetProperty="Opacity" From="1.0" To="0.2" AutoReverse="True" RepeatBehavior="Forever" Duration="0:0:5"></DoubleAnimation>-->
+            <DoubleAnimation Storyboard.TargetName="lissa" Storyboard.TargetProperty="(Canvas.Left)" From="0" To="1200" AutoReverse="True" RepeatBehavior="Forever" Duration="0:0:5"></DoubleAnimation>
+            <!--<DoubleAnimation Storyboard.TargetName="chrom" Storyboard.TargetProperty="(RenderTransform).(RotateTransform.Angle)" From="0" To="360" RepeatBehavior="Forever" Duration="0:0:1"></DoubleAnimation>-->
+        </Storyboard>
+        <Storyboard x:Name="AnimaLucina">
+            <!--<DoubleAnimation Storyboard.TargetName="chrom" Storyboard.TargetProperty="Opacity" From="1.0" To="0.2" AutoReverse="True" RepeatBehavior="Forever" Duration="0:0:5"></DoubleAnimation>-->
+            <DoubleAnimation Storyboard.TargetName="lucina" Storyboard.TargetProperty="(Canvas.Left)" From="1200" To="0" AutoReverse="True" RepeatBehavior="Forever" Duration="0:0:5"></DoubleAnimation>
+            <!--<DoubleAnimation Storyboard.TargetName="chrom" Storyboard.TargetProperty="(RenderTransform).(RotateTransform.Angle)" From="0" To="360" RepeatBehavior="Forever" Duration="0:0:1"></DoubleAnimation>-->
+        </Storyboard>
+        <Storyboard x:Name="AnimaOwain">
+            <!--<DoubleAnimation Storyboard.TargetName="chrom" Storyboard.TargetProperty="Opacity" From="1.0" To="0.2" AutoReverse="True" RepeatBehavior="Forever" Duration="0:0:5"></DoubleAnimation>-->
+            <DoubleAnimation Storyboard.TargetName="owain" Storyboard.TargetProperty="(Canvas.Left)" From="0" To="1200" AutoReverse="True" RepeatBehavior="Forever" Duration="0:0:5"></DoubleAnimation>
+            <!--<DoubleAnimation Storyboard.TargetName="chrom" Storyboard.TargetProperty="(RenderTransform).(RotateTransform.Angle)" From="0" To="360" RepeatBehavior="Forever" Duration="0:0:1"></DoubleAnimation>-->
+        </Storyboard>
+        <Storyboard x:Name="AnimaTharja">
+            <!--<DoubleAnimation Storyboard.TargetName="chrom" Storyboard.TargetProperty="Opacity" From="1.0" To="0.2" AutoReverse="True" RepeatBehavior="Forever" Duration="0:0:5"></DoubleAnimation>-->
+            <DoubleAnimation Storyboard.TargetName="tharja" Storyboard.TargetProperty="(Canvas.Left)" From="1200" To="0" AutoReverse="True" RepeatBehavior="Forever" Duration="0:0:5"></DoubleAnimation>
+            <!--<DoubleAnimation Storyboard.TargetName="chrom" Storyboard.TargetProperty="(RenderTransform).(RotateTransform.Angle)" From="0" To="360" RepeatBehavior="Forever" Duration="0:0:1"></DoubleAnimation>-->
+        </Storyboard>
+    </Page.Resources>
+
+    <Canvas Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Image x:Name="chrom" Source="Assets/chrom.png">
+            <!--<Image.RenderTransform>
+                <RotateTransform CenterX="74" CenterY="67.5"/>
+            </Image.RenderTransform>-->
+        </Image>
+        <Image x:Name="lissa" Source="Assets/lissa.png" Canvas.Top="148">
+            <!--<Image.RenderTransform>
+                <RotateTransform CenterX="74" CenterY="67.5"/>
+            </Image.RenderTransform>-->
+        </Image>
+        <Image x:Name="lucina" Source="Assets/lucina.png" Canvas.Top="296">
+            <!--<Image.RenderTransform>
+                <RotateTransform CenterX="74" CenterY="67.5"/>
+            </Image.RenderTransform>-->
+        </Image>
+        <Image x:Name="owain" Source="Assets/owain.png" Canvas.Top="444">
+            <!--<Image.RenderTransform>
+                <RotateTransform CenterX="74" CenterY="67.5"/>
+            </Image.RenderTransform>-->
+        </Image>
+        <Image x:Name="tharja" Source="Assets/tharja.png" Canvas.Top="592">
+            <!--<Image.RenderTransform>
+                <RotateTransform CenterX="74" CenterY="67.5"/>
+            </Image.RenderTransform>-->
+        </Image>
+    </Canvas>
+</Page>

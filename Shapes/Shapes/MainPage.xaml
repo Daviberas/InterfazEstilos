@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="Shapes.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Shapes"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Canvas>
+            <Polygon Stroke="Black" Fill="Blue" Points="150,100 200,200 100,200"></Polygon>
+            <Polygon Stroke="Black" Fill="Blue" Points="100,240 100,260 200,260 210,250 200,240"></Polygon>
+            <Polygon Stroke="Black" Fill="Blue" Points="145,275 135,300 110,300 130,315 130,315 120,340 145,325 170,340 160,315 160,315 180,300 155,300"></Polygon>
+            <Path Fill="Black">
+                <Path.Data>
+                    <GeometryGroup>
+                        <EllipseGeometry Center="440,440" RadiusX="30" RadiusY="30"/>
+                        <EllipseGeometry Center="450,440" RadiusX="40" RadiusY="40"/>
+                    </GeometryGroup>
+                </Path.Data>
+            </Path>
+            <Path Fill="Black">
+                <Path.Data>
+                    <GeometryGroup>
+                        <PathGeometry>
+                            <PathFigure IsClosed="True" StartPoint="500,500">
+                                <LineSegment Point="520,480"/>
+                                <LineSegment Point="520,520"/>
+                            </PathFigure>
+                        </PathGeometry>
+                        <RectangleGeometry Rect="520,490 40,20"/>
+                    </GeometryGroup>
+                </Path.Data>
+            </Path>
+        </Canvas>
+    </Grid>
+</Page>
